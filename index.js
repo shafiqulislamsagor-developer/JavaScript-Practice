@@ -1,6 +1,11 @@
 const text = document.getElementById("demo");
 const button = document.getElementById("btn");
 
-button.addEventListener("click", () => {
+function clickButton() {
   text.innerHTML = "hello javascript world!";
+}
+
+button.addEventListener("click", () => {
+  //   text.innerHTML = "hello javascript world!";
+  clickButton();
 });
