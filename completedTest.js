@@ -36,3 +36,19 @@ try {
 } catch {
   console.log("error");
 }
+
+// function test
+
+function run(a, b) {
+  return a * b;
+}
+
+function toCelsius(fahrenheit) {
+  if (!fahrenheit) return "no fahrenheit number";
+  const degrees = (5 / 9) * (fahrenheit - 32);
+  return degrees;
+}
+
+const value = toCelsius;
+
+// console.log("value: " + value(20));
