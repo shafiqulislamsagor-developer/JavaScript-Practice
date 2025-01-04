@@ -52,3 +52,20 @@ function toCelsius(fahrenheit) {
 const value = toCelsius;
 
 // console.log("value: " + value(20));
+
+// object practice
+
+const car = {
+  name: "BMW",
+  model: "X5",
+  year: 2020,
+  carInfo: function () {
+    return `This is a ${this.name} ${this.model} from ${this.year}`;
+  },
+};
+
+// const newCar = new Object({ name: "xl" });
+
+// console.log(newCar);
+
+console.log(car.carInfo());
