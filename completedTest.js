@@ -108,3 +108,23 @@ person.total = function () {
 };
 
 console.log(person.total());
+
+// Object Display practice
+
+const object = {
+  name: "test",
+  age: 30,
+  city: "New York",
+};
+
+let result = "";
+
+// for (let i in object) {
+//   console.log(object[i]);
+// }
+
+for (let [key, value] of Object.entries(object)) {
+  result += `${key}: ${value} ,`;
+}
+
+console.log(Object.values(object));
