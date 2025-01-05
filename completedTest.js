@@ -128,3 +128,32 @@ for (let [key, value] of Object.entries(object)) {
 }
 
 console.log(Object.values(object));
+
+// Object Constructors practice
+
+function Cperson(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eye = eye;
+}
+function persons(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eye = eye;
+  this.fullName = first + " " + last;
+}
+
+const Value = new Cperson("first", "last", "age", "eye");
+
+const firstPerson = new persons("first", "last", "age", "eye");
+
+persons.prototype.changeName = function (name) {
+  this.lastName = name;
+};
+
+firstPerson.changeName("hlw00");
+// persons.prototype.default = "person";
+// console.log(Value.age);
+console.log(firstPerson);
