@@ -69,3 +69,23 @@ const car = {
 // console.log(newCar);
 
 console.log(car.carInfo());
+
+// Object properties practice
+
+const person = {
+  firstName: "shafiqul islam",
+  lastName: "sagor",
+  age: 18,
+  eyeColor: "black",
+  family: {
+    father: "saroar hossain sumon",
+    mother: "solpona akter",
+    bother: "mustakim",
+    wife: "al muzija rahman habiba",
+  },
+};
+
+// delete person.eyeColor; // remove eyeColor property
+delete person["eyeColor"];
+
+console.log(person.family.bother);
