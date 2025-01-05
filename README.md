@@ -1,1 +1,1 @@
-# JavaScript-Practice
+# JavaScript-Practice [w3school documentation]
