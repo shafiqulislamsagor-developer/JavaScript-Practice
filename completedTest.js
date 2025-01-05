@@ -89,3 +89,22 @@ const person = {
 delete person["eyeColor"];
 
 console.log(person.family.bother);
+
+// object Methods practice
+
+const person1 = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  },
+};
+
+const fullNames = person.fullName().toUpperCase();
+
+person.total = function () {
+  return this.id - 11;
+};
+
+console.log(person.total());
